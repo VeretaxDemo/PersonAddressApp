@@ -23,9 +23,11 @@
 
         <Label x:Name="personEntryLabel" Grid.Row="0" Grid.Column="1" Margin="0 10 0 10">Add Person</Label>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
-            <Button x:Name="backButton" Margin="0 0 20 0" Padding="10 5 10 5" Click="backButton_Click">Back</Button>
-            <Button x:Name="saveButton" Padding="10 5 10 5" Click="saveButton_Click">Save</Button>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3">
+            <Button x:Name="backButton" Margin="0 0 20 0" Padding="10 5 10 5" Click="BackButton_Click">Back</Button>
+            <Button x:Name="saveButton" Margin="0 0 20 0" Padding="10 5 10 5" Click="SaveButton_Click">Save</Button>
+            <Button x:Name="exportButton" Margin="0 0 20 0" Padding="10 5 10 5" Content="Export" Click="ExportButton_Click" IsEnabled="{Binding IsExportEnabled}" />
+
         </StackPanel>
 
         <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal">
@@ -37,10 +39,10 @@
                 <TextBlock x:Name="addressesTextBlock" Margin="0 10 15 10">Addresses:</TextBlock>
             </StackPanel>
             <StackPanel Orientation="Vertical" Grid.Column="2" Margin="0 1 0 10">
-                <TextBox x:Name="firstNameTextBox" MinWidth="200" MaxWidth="300" Margin="0 10 15 10"></TextBox>
-                <TextBox x:Name="lastNameTextBox" MinWidth="200" MaxWidth="300" Margin="0 10 15 10"></TextBox>
-                <TextBox x:Name="emailTextBox" MinWidth="200" MaxWidth="300" Margin="0 10 15 10"></TextBox>
-                <Button x:Name="addAddressButton" Margin="0 0 20 0" Padding="10 5 10 5" Click="addAddressButton_Click">Add Address</Button>
+                <TextBox x:Name="firstNameTextBox" MinWidth="200" MaxWidth="300" Margin="0 10 15 10" Text="{Binding FirstName, Mode=TwoWay}" ></TextBox>
+                <TextBox x:Name="lastNameTextBox" MinWidth="200" MaxWidth="300" Margin="0 10 15 10" Text="{Binding LastName, Mode=TwoWay}" ></TextBox>
+                <TextBox x:Name="emailTextBox" MinWidth="200" MaxWidth="300" Margin="0 10 15 10" Text="{Binding Email, Mode=TwoWay}" ></TextBox>
+                <Button x:Name="addAddressButton" Margin="0 0 20 0" Padding="10 5 10 5" Click="AddAddressButton_Click">Add Address</Button>
             </StackPanel>
         </StackPanel>
 
