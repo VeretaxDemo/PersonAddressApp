@@ -48,16 +48,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 34);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(287, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.Size = new System.Drawing.Size(318, 54);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Address";
+            this.label1.Text = "Address Entry";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 84);
+            this.label2.Location = new System.Drawing.Point(66, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 20);
             this.label2.TabIndex = 1;
@@ -65,7 +67,7 @@
             // 
             // address1TextBox
             // 
-            this.address1TextBox.Location = new System.Drawing.Point(210, 143);
+            this.address1TextBox.Location = new System.Drawing.Point(210, 191);
             this.address1TextBox.Name = "address1TextBox";
             this.address1TextBox.Size = new System.Drawing.Size(395, 27);
             this.address1TextBox.TabIndex = 2;
@@ -73,7 +75,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(66, 146);
+            this.label3.Location = new System.Drawing.Point(66, 194);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 20);
             this.label3.TabIndex = 3;
@@ -81,7 +83,7 @@
             // 
             // address2TextBox
             // 
-            this.address2TextBox.Location = new System.Drawing.Point(210, 199);
+            this.address2TextBox.Location = new System.Drawing.Point(210, 247);
             this.address2TextBox.Name = "address2TextBox";
             this.address2TextBox.Size = new System.Drawing.Size(395, 27);
             this.address2TextBox.TabIndex = 3;
@@ -89,7 +91,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 202);
+            this.label4.Location = new System.Drawing.Point(66, 250);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 20);
             this.label4.TabIndex = 5;
@@ -97,7 +99,7 @@
             // 
             // cityTextBox
             // 
-            this.cityTextBox.Location = new System.Drawing.Point(210, 256);
+            this.cityTextBox.Location = new System.Drawing.Point(210, 304);
             this.cityTextBox.Name = "cityTextBox";
             this.cityTextBox.Size = new System.Drawing.Size(395, 27);
             this.cityTextBox.TabIndex = 4;
@@ -105,7 +107,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(66, 259);
+            this.label5.Location = new System.Drawing.Point(66, 307);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 20);
             this.label5.TabIndex = 7;
@@ -114,7 +116,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(66, 311);
+            this.label6.Location = new System.Drawing.Point(66, 359);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 20);
             this.label6.TabIndex = 9;
@@ -122,7 +124,7 @@
             // 
             // zipCodeTextBox
             // 
-            this.zipCodeTextBox.Location = new System.Drawing.Point(210, 359);
+            this.zipCodeTextBox.Location = new System.Drawing.Point(210, 407);
             this.zipCodeTextBox.Name = "zipCodeTextBox";
             this.zipCodeTextBox.Size = new System.Drawing.Size(395, 27);
             this.zipCodeTextBox.TabIndex = 6;
@@ -130,7 +132,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(66, 362);
+            this.label7.Location = new System.Drawing.Point(66, 410);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 20);
             this.label7.TabIndex = 11;
@@ -139,7 +141,7 @@
             // addressTypeComboBox
             // 
             this.addressTypeComboBox.FormattingEnabled = true;
-            this.addressTypeComboBox.Location = new System.Drawing.Point(210, 79);
+            this.addressTypeComboBox.Location = new System.Drawing.Point(210, 127);
             this.addressTypeComboBox.Name = "addressTypeComboBox";
             this.addressTypeComboBox.Size = new System.Drawing.Size(254, 28);
             this.addressTypeComboBox.TabIndex = 1;
@@ -147,14 +149,14 @@
             // stateComboBox
             // 
             this.stateComboBox.FormattingEnabled = true;
-            this.stateComboBox.Location = new System.Drawing.Point(210, 308);
+            this.stateComboBox.Location = new System.Drawing.Point(210, 356);
             this.stateComboBox.Name = "stateComboBox";
             this.stateComboBox.Size = new System.Drawing.Size(254, 28);
             this.stateComboBox.TabIndex = 5;
             // 
             // saveAddressButton
             // 
-            this.saveAddressButton.Location = new System.Drawing.Point(210, 443);
+            this.saveAddressButton.Location = new System.Drawing.Point(210, 491);
             this.saveAddressButton.Name = "saveAddressButton";
             this.saveAddressButton.Size = new System.Drawing.Size(96, 34);
             this.saveAddressButton.TabIndex = 7;
@@ -164,7 +166,7 @@
             // 
             // cancelAddressButton
             // 
-            this.cancelAddressButton.Location = new System.Drawing.Point(340, 443);
+            this.cancelAddressButton.Location = new System.Drawing.Point(340, 491);
             this.cancelAddressButton.Name = "cancelAddressButton";
             this.cancelAddressButton.Size = new System.Drawing.Size(96, 34);
             this.cancelAddressButton.TabIndex = 8;
@@ -195,7 +197,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddPersonAddress";
-            this.Text = "Add Person Address";
+            this.Text = "Address Entry";
             this.Load += new System.EventHandler(this.AddPersonAddress_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

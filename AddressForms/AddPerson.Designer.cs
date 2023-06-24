@@ -45,16 +45,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(67, 21);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(342, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
+            this.label1.Size = new System.Drawing.Size(294, 54);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Person";
+            this.label1.Text = "Person Entry";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(71, 102);
+            this.label2.Location = new System.Drawing.Point(71, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 20);
             this.label2.TabIndex = 1;
@@ -62,14 +64,14 @@
             // 
             // firstNameTextBox
             // 
-            this.firstNameTextBox.Location = new System.Drawing.Point(187, 99);
+            this.firstNameTextBox.Location = new System.Drawing.Point(187, 143);
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.Size = new System.Drawing.Size(287, 27);
             this.firstNameTextBox.TabIndex = 1;
             // 
             // lastNameTextBox
             // 
-            this.lastNameTextBox.Location = new System.Drawing.Point(187, 155);
+            this.lastNameTextBox.Location = new System.Drawing.Point(187, 199);
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.Size = new System.Drawing.Size(287, 27);
             this.lastNameTextBox.TabIndex = 2;
@@ -77,7 +79,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(71, 158);
+            this.label3.Location = new System.Drawing.Point(71, 202);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 20);
             this.label3.TabIndex = 3;
@@ -85,7 +87,7 @@
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(187, 208);
+            this.emailTextBox.Location = new System.Drawing.Point(187, 252);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(287, 27);
             this.emailTextBox.TabIndex = 3;
@@ -93,7 +95,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(71, 211);
+            this.label4.Location = new System.Drawing.Point(71, 255);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 20);
             this.label4.TabIndex = 5;
@@ -102,7 +104,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(71, 261);
+            this.label5.Location = new System.Drawing.Point(71, 305);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 20);
             this.label5.TabIndex = 7;
@@ -110,7 +112,7 @@
             // 
             // savePersonButton
             // 
-            this.savePersonButton.Location = new System.Drawing.Point(187, 63);
+            this.savePersonButton.Location = new System.Drawing.Point(187, 107);
             this.savePersonButton.Name = "savePersonButton";
             this.savePersonButton.Size = new System.Drawing.Size(87, 27);
             this.savePersonButton.TabIndex = 5;
@@ -120,7 +122,7 @@
             // 
             // goBackAddPersonButton
             // 
-            this.goBackAddPersonButton.Location = new System.Drawing.Point(75, 63);
+            this.goBackAddPersonButton.Location = new System.Drawing.Point(75, 107);
             this.goBackAddPersonButton.Name = "goBackAddPersonButton";
             this.goBackAddPersonButton.Size = new System.Drawing.Size(87, 27);
             this.goBackAddPersonButton.TabIndex = 6;
@@ -130,7 +132,7 @@
             // 
             // addressButton
             // 
-            this.addressButton.Location = new System.Drawing.Point(187, 254);
+            this.addressButton.Location = new System.Drawing.Point(187, 298);
             this.addressButton.Name = "addressButton";
             this.addressButton.Size = new System.Drawing.Size(174, 27);
             this.addressButton.TabIndex = 4;
@@ -142,7 +144,7 @@
             // 
             this.addressesListBox.FormattingEnabled = true;
             this.addressesListBox.ItemHeight = 20;
-            this.addressesListBox.Location = new System.Drawing.Point(187, 310);
+            this.addressesListBox.Location = new System.Drawing.Point(187, 354);
             this.addressesListBox.Name = "addressesListBox";
             this.addressesListBox.Size = new System.Drawing.Size(801, 224);
             this.addressesListBox.TabIndex = 7;
@@ -152,7 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 562);
+            this.ClientSize = new System.Drawing.Size(1000, 748);
             this.Controls.Add(this.addressesListBox);
             this.Controls.Add(this.addressButton);
             this.Controls.Add(this.goBackAddPersonButton);
@@ -168,7 +170,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddPerson";
-            this.Text = "Add Person";
+            this.Text = "Person Entry";
             this.Load += new System.EventHandler(this.AddPerson_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
