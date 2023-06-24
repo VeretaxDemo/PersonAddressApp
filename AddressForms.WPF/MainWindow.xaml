@@ -24,21 +24,23 @@
             <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <Label x:Name="windowLabel" Margin="0 10 0 10" FontSize="36" HorizontalAlignment="Center" Grid.ColumnSpan="3">Person Address Dashboard</Label>
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical">
-            <Label x:Name="windowLabel" Margin="0 10 0 10">Person Address Dashboard</Label>
-            <Button x:Name="addPersonButton" Margin="0 10 0 10" Padding="0 10" Click="AddPersonButton_Click">Add Person</Button>
-            <Button x:Name="exportAllButton" Margin="0 10 0 10" Padding="0 10" Click="ExportAllButton_Click" IsEnabled="{Binding People.Count, Converter={StaticResource CountToBoolConverter}}">Export All</Button>
-            <ListBox x:Name="peopleListBox" Grid.Row="2" Grid.Column="1" Margin="0 20" MinHeight="40" ItemsSource="{Binding People}">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding LastName}"></TextBlock>
-                            <TextBlock Text=", "></TextBlock>
-                            <TextBlock Text="{Binding FirstName}"></TextBlock>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
+            
+            <Button x:Name="addPersonButton" Margin="0 10 0 10" Padding="15 10" Click="AddPersonButton_Click">Add Person</Button>
+            <Button x:Name="exportAllButton" Margin="0 10 0 10" Padding="15 10" Click="ExportAllButton_Click" IsEnabled="{Binding People.Count, Converter={StaticResource CountToBoolConverter}}">Export All</Button>
+            
         </StackPanel>
+        <ListBox x:Name="peopleListBox" Grid.Row="2" Grid.ColumnSpan="3" Margin="30 20" MinHeight="40" ItemsSource="{Binding People}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding LastName}"></TextBlock>
+                        <TextBlock Text=", "></TextBlock>
+                        <TextBlock Text="{Binding FirstName}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AddressForms.WPF"
         mc:Ignorable="d" FontSize="22"
-        Title="PersonAddressEntry" Height="450" Width="800">
+        Title="Person Address Entry" Height="550" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -21,7 +21,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Label x:Name="addressEntryLabel" Grid.Row="0" Grid.Column="1" Margin="0 20 0 20">Add Address</Label>
+        <Label x:Name="addressEntryLabel" Grid.Row="0" Grid.ColumnSpan="4" Margin="10 20 10 20"  HorizontalAlignment="Center" FontSize="36">Address Entry</Label>
 
         <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal">
             <StackPanel Orientation="Vertical" Margin="0 0 20 0">
