@@ -1,4 +1,4 @@
-﻿namespace PersonAddressLibrary.Framework.Addresses
+﻿namespace PersonAddressLibrary.Framework.Models.Addresses
 {
     public class US_State : IAddressState
     {

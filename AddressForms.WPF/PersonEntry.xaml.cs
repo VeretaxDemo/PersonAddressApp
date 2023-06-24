@@ -13,7 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using PersonAddressLibrary.Framework;
-using PersonAddressLibrary.Framework.Addresses;
+using PersonAddressLibrary.Framework.Models;
+using PersonAddressLibrary.Framework.Models.Addresses;
 
 namespace AddressForms.WPF
 {

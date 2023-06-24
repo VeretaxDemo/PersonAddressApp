@@ -1,6 +1,6 @@
 ﻿
 
-namespace PersonAddressLibrary.Framework.Helpers
+namespace PersonAddressLibrary.Framework.Extensions
 {
     public static class ComboBoxHelper
     {

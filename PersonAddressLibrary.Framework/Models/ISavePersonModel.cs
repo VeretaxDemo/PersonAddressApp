@@ -1,4 +1,4 @@
-﻿namespace PersonAddressLibrary.Framework
+﻿namespace PersonAddressLibrary.Framework.Models
 {
     public interface ISavePersonModel
     {

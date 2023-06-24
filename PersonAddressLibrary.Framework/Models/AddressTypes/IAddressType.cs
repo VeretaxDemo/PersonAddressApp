@@ -1,4 +1,4 @@
-﻿namespace PersonAddressLibrary.Framework.AddressTypes
+﻿namespace PersonAddressLibrary.Framework.Models.AddressTypes
 {
     public interface IAddressType
     {

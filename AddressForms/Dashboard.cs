@@ -8,8 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PersonAddressLibrary.Framework;
-using PersonAddressLibrary.Framework.Addresses;
+using PersonAddressLibrary.Framework.Extensions;
 using PersonAddressLibrary.Framework.Helpers;
+using PersonAddressLibrary.Framework.Models;
 
 namespace AddressForms
 {
