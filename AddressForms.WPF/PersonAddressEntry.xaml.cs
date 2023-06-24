@@ -1,6 +1,4 @@
-﻿using PersonAddressLibrary.Framework.Addresses;
-using PersonAddressLibrary.Framework.AddressTypes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using PersonAddressLibrary.Framework.Helpers;
+using PersonAddressLibrary.Framework.Models.Addresses;
+using PersonAddressLibrary.Framework.Models.AddressTypes;
 
 namespace AddressForms.WPF
 {

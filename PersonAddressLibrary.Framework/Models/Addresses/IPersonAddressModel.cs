@@ -1,6 +1,6 @@
-﻿using PersonAddressLibrary.Framework.AddressTypes;
+﻿using PersonAddressLibrary.Framework.Models.AddressTypes;
 
-namespace PersonAddressLibrary.Framework.Addresses
+namespace PersonAddressLibrary.Framework.Models.Addresses
 {
     public interface IPersonAddressModel
     {

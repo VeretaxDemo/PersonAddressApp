@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Forms;
-using PersonAddressLibrary.Framework.Addresses;
-using PersonAddressLibrary.Framework.AddressTypes;
+using PersonAddressLibrary.Framework.Models.Addresses;
+using PersonAddressLibrary.Framework.Models.AddressTypes;
 
 namespace PersonAddressLibrary.Framework.Helpers
 {

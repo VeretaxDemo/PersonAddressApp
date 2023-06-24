@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using PersonAddressLibrary.Framework.Addresses;
+using PersonAddressLibrary.Framework.Models.Addresses;
 
-namespace PersonAddressLibrary.Framework
+namespace PersonAddressLibrary.Framework.Models
 {
     public class PersonModel: IPersonModel
     {

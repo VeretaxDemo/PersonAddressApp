@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PersonAddressLibrary.Framework.Addresses
+namespace PersonAddressLibrary.Framework.Models.Addresses
 {
     static public class StateList
     {

@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using PersonAddressLibrary.Framework;
+using PersonAddressLibrary.Framework.Models;
 
 namespace AddressForms.WPF
 {

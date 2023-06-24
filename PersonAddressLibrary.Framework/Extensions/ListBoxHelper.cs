@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace PersonAddressLibrary.Framework.Helpers
+namespace PersonAddressLibrary.Framework.Extensions
 {
     public static class ListBoxHelper
     {

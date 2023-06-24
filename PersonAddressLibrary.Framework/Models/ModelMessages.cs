@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PersonAddressLibrary.Framework.Addresses;
+﻿using PersonAddressLibrary.Framework.Models.Addresses;
 
-namespace PersonAddressLibrary.Framework
+namespace PersonAddressLibrary.Framework.Models
 {
     public static class ModelMessages
     {
