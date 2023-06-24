@@ -1,0 +1,59 @@
+﻿<Window x:Class="AddressForms.WPF.Person_Entry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddressForms.WPF"
+        mc:Ignorable="d" FontSize="20"
+        Title="Person_Entry" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="personEntryLabel" Grid.Row="0" Grid.Column="1" Margin="0 10 0 10">Add Person</Label>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+            <Button x:Name="backButton" Margin="0 0 20 0" Padding="10 5 10 5" Click="backButton_Click">Back</Button>
+            <Button x:Name="saveButton" Padding="10 5 10 5" Click="saveButton_Click">Save</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Margin="0 0 20 0">
+                <TextBlock x:Name="firstNameTextBlock" Margin="0 10 15 10">First Name: </TextBlock>
+                <TextBlock x:Name="lastNameTextBlock" Margin="0 10 15 10">Last Name:
+                </TextBlock>
+                <TextBlock x:Name="emailTextBlock" Margin="0 10 15 10">Email:</TextBlock>
+                <TextBlock x:Name="addressesTextBlock" Margin="0 10 15 10">Addresses:</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Column="2" Margin="0 1 0 10">
+                <TextBox x:Name="firstNameTextBox" MinWidth="200" MaxWidth="300" Margin="0 10 15 10"></TextBox>
+                <TextBox x:Name="lastNameTextBox" MinWidth="200" MaxWidth="300" Margin="0 10 15 10"></TextBox>
+                <TextBox x:Name="emailTextBox" MinWidth="200" MaxWidth="300" Margin="0 10 15 10"></TextBox>
+                <Button x:Name="addAddressButton" Margin="0 0 20 0" Padding="10 5 10 5" Click="addAddressButton_Click">Add Address</Button>
+            </StackPanel>
+        </StackPanel>
+
+        <ListBox x:Name="addressListBox" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="1" Margin="-40 20 15 20">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding FullAddress }" />
+
+                    </StackPanel>
+                </DataTemplate>
+
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
